@@ -34,7 +34,7 @@ class Factory {
    * @param Behance\NBD\Cache\ConfigService $config
    * @param Symfony\Component\EventDispatcher\EventDispatcherInterface $event_dispatcher
    *
-   * @return Behance\NBD\Cache\Interfaces\AdapterInterface
+   * @return Behance\NBD\Cache\AdapterInterface
    */
   public static function create( array $config, $type = null, ConfigService $config_service = null, EventDispatcherInterface $event_dispatcher = null ) {
 
