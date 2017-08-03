@@ -163,6 +163,12 @@ interface AdapterInterface {
 
 
   /**
+   * @return array
+   */
+  public function getBoundEvents();
+
+
+  /**
    * Disconnects from server(s)
    */
   public function close();

@@ -313,6 +313,18 @@ abstract class AdapterAbstract implements AdapterInterface {
   } // bindEvent
 
 
+   /**
+    * {@inheritDoc}
+    */
+  public function getBoundEvents() {
+
+     return ( $this->_dispatcher )
+            ? $this->_dispatcher->getListeners()
+            : [];
+
+  } // getBoundEvents
+
+
   /**
    * {@inheritDoc}
    */
